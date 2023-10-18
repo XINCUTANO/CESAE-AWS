@@ -1,25 +1,29 @@
-# ler numero1
-print("Introduza um numero:")
-num1 = int(input())
-# ler numero2
-print("Introduza um numero:")
-num2 = int(input())
-# ler numero3
-print("Introduza um numero:")
-num3 = int(input())
-if (num1 < num2) and (num1 < num3) and (num2 < num3):
-    print(num1, num2, num3)
-if (num1 < num3) and (num1 < num2) and (num3 < num2):
-    print(num1, num3, num2)
+# ler numero 1
+a = int(input("Insira numero 1: "))
 
-if (num2 < num1) and (num2 < num3) and (num1 < num3):
-    print(num2, num1, num3)
+# ler numero 2
+b = int(input("Insira numero 2: "))
 
-if (num2 < num3) and (num2 < num1) and (num1> num3):
-    print(num2, num3, num1)
+# ler numero 3
+c = int(input("Insira numero 3: "))
 
-if (num3 < num1) and (num3 < num2) and (num2 < num1):
-    print(num3, num2, num1)
+# a mais pequeno
+if (a < b and a < c):
+    if (b < c):
+        print(a, b, c)
+    else:
+        print(a, c, b)
 
-if (num3 < num2) and (num3 < num1) and (num2 > num1):
-    print(num3, num1, num2)
+# b mais pequeno
+if (b < a and b < c):
+    if (a < c):
+        print(b, a, c)
+    else:
+        print(b, c, a)
+
+# c mais pequeno
+if (c < a and c < b):
+    if (a < b):
+        print(c, a, b)
+    else:
+        print(c, b, a)
