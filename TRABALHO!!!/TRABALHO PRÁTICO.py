@@ -1,4 +1,4 @@
-#=
+#variaveis
 custo=200
 limpeza=15
 I=200
@@ -150,4 +150,5 @@ elif(tipodoquarto=="S"):
 else:
     print("Esta tipologia está incorreta.")
 
+#em relaçao ao ultimo ponto, nao me senti preparado preferi entregar assim, vi umas coisas mas nao cheguei lá, obrigado:D
 
